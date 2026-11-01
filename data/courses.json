@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "campus": "University of Rizal System - Morong Campus",
+    "version": "0.1-draft",
+    "status": "DRAFT. Program names, majors, licensure and career notes must be verified against the official URS Morong prospectus or admissions office before publishing.",
+    "strandOrder": ["STEM", "ABM", "HUMSS", "GAS", "TVL"],
+    "profileScale": "Each trait is 0-5: how much the program needs or rewards that trait. Missing traits mean 0."
+  },
+  "colleges": {
+    "COEng": "College of Engineering",
+    "COS": "College of Science",
+    "COE": "College of Education",
+    "CIT": "College of Industrial Technology"
+  },
+  "courses": [
+    {
+      "id": "coeng-civil", "college": "COEng",
+      "name": "BS Civil Engineering", "short": "Civil Eng.",
+      "tagline": "Design and build roads, bridges, buildings and water systems.",
+      "careers": ["Structural engineer", "Construction or site engineer", "Highway and bridge engineer", "Government public works engineer"],
+      "licensure": "Civil Engineer licensure exam (PRC)",
+      "strand": [1, 0.2, 0.1, 0.5, 0.3],
+      "profile": { "rigor": 5, "R": 4, "I": 3, "A": 1, "S": 1, "E": 2, "C": 3, "math": 5, "sci": 4, "lang": 2, "comp": 2, "mech": 4, "buildings": 5 }
+    },
+    {
+      "id": "coeng-electrical", "college": "COEng",
+      "name": "BS Electrical Engineering", "short": "Electrical Eng.",
+      "tagline": "Power systems, wiring and electrical design for homes, factories and cities.",
+      "careers": ["Electrical design engineer", "Power plant or utility engineer", "Maintenance engineer", "Energy systems engineer"],
+      "licensure": "Registered Electrical Engineer exam (PRC)",
+      "strand": [1, 0.2, 0.1, 0.5, 0.3],
+      "profile": { "signals": 1, "rigor": 5, "R": 4, "I": 4, "S": 1, "E": 1, "C": 3, "math": 5, "sci": 5, "lang": 2, "comp": 3, "mech": 4, "electricity": 5 }
+    },
+    {
+      "id": "coeng-mechanical", "college": "COEng",
+      "name": "BS Mechanical Engineering", "short": "Mechanical Eng.",
+      "tagline": "Engines, machines, manufacturing and the systems that keep things moving.",
+      "careers": ["Machine and plant engineer", "Manufacturing engineer", "Design engineer", "Maintenance and reliability engineer"],
+      "licensure": "Mechanical Engineer exam (PRC)",
+      "strand": [1, 0.2, 0.1, 0.5, 0.3],
+      "profile": { "rigor": 5, "R": 5, "I": 4, "A": 1, "S": 1, "E": 2, "C": 2, "math": 5, "sci": 4, "lang": 2, "comp": 2, "mech": 5, "vehicles": 2, "cooling": 2 }
+    },
+    {
+      "id": "coeng-ece", "college": "COEng",
+      "name": "BS Electronics and Communications Engineering", "short": "Electronics and Comm. Eng.",
+      "tagline": "Circuits, signals, telecommunications and the technology behind phones and the internet.",
+      "careers": ["Telecommunications engineer", "Electronics design engineer", "Broadcast engineer", "Network systems engineer"],
+      "licensure": "Electronics Engineer / ECE exam (PRC)",
+      "strand": [1, 0.2, 0.1, 0.5, 0.3],
+      "profile": { "signals": 5, "rigor": 5, "R": 3, "I": 5, "A": 1, "S": 1, "E": 1, "C": 3, "math": 5, "sci": 5, "lang": 2, "comp": 4, "mech": 3, "electricity": 4 }
+    },
+    {
+      "id": "coeng-computer", "college": "COEng",
+      "name": "BS Computer Engineering", "short": "Computer Eng.",
+      "tagline": "Where hardware meets software: embedded systems, robotics and computer design.",
+      "careers": ["Embedded systems engineer", "Hardware and firmware developer", "Network engineer", "Robotics and automation engineer"],
+      "licensure": "Computer Engineer licensure exam (PRC) - verify current status",
+      "strand": [1, 0.2, 0.1, 0.5, 0.4],
+      "profile": { "signals": 2, "rigor": 5, "R": 3, "I": 5, "A": 1, "S": 1, "E": 1, "C": 3, "math": 5, "sci": 4, "lang": 2, "comp": 5, "mech": 3, "electricity": 3 }
+    },
+
+    {
+      "id": "cos-cs", "college": "COS",
+      "name": "BS Computer Science", "short": "Computer Science",
+      "tagline": "Software, algorithms, data and artificial intelligence.",
+      "careers": ["Software developer", "Data analyst or data scientist", "Web or mobile app developer", "Systems analyst"],
+      "licensure": "No mandatory licensure exam; optional industry certifications",
+      "strand": [1, 0.3, 0.2, 0.6, 0.5],
+      "profile": { "rigor": 4, "R": 1, "I": 5, "A": 2, "S": 1, "E": 1, "C": 3, "math": 4, "sci": 3, "lang": 2, "comp": 5, "mech": 1 }
+    },
+    {
+      "id": "cos-humanservices", "college": "COS",
+      "name": "BS Human Services", "short": "Human Services",
+      "tagline": "Support individuals, families and communities through social programs.",
+      "careers": ["Community development worker", "Program coordinator (NGO or LGU)", "Youth or family services staff", "HR or welfare assistant"],
+      "licensure": "Verify requirements with URS; not the same as the Social Worker licensure track",
+      "strand": [0.3, 0.3, 1, 0.8, 0.2],
+      "profile": { "rigor": 2, "I": 2, "A": 1, "S": 5, "E": 2, "C": 3, "math": 1, "sci": 1, "lang": 4, "comp": 1 }
+    },
+    {
+      "id": "cos-psychology", "college": "COS",
+      "name": "BS Psychology", "short": "Psychology",
+      "tagline": "Study the mind and behavior through research and real-life application.",
+      "careers": ["Psychometrician (after the exam)", "HR and recruitment staff", "Researcher", "Guidance or counseling aide (graduate study for higher roles)"],
+      "licensure": "Psychometrician exam (PRC); Psychologist status needs graduate study",
+      "strand": [0.8, 0.3, 1, 0.8, 0.1],
+      "profile": { "rigor": 4, "I": 5, "A": 2, "S": 4, "E": 1, "C": 2, "math": 2, "sci": 3, "lang": 4, "comp": 1 }
+    },
+    {
+      "id": "cos-math", "college": "COS",
+      "name": "BS Mathematics", "short": "Mathematics",
+      "tagline": "Pure and applied math: patterns, proofs, statistics and modeling.",
+      "careers": ["Statistician", "Data analyst", "Actuarial or finance analyst", "Researcher"],
+      "licensure": "No mandatory licensure exam (teaching needs education units and the LET)",
+      "strand": [1, 0.4, 0.1, 0.6, 0.1],
+      "profile": { "rigor": 5, "R": 1, "I": 5, "A": 1, "S": 1, "E": 1, "C": 4, "math": 5, "sci": 3, "lang": 2, "comp": 3 }
+    },
+    {
+      "id": "cos-bio-micro", "college": "COS",
+      "name": "BS Biology (Microbiology)", "short": "Biology - Microbiology",
+      "tagline": "Study bacteria, viruses and cells in the lab, in food, health and the environment.",
+      "careers": ["Laboratory analyst", "Quality assurance staff (food or pharma)", "Researcher", "Pre-med or health science pathway"],
+      "licensure": "No mandatory licensure exam for the degree itself",
+      "strand": [1, 0.1, 0.1, 0.5, 0.2],
+      "profile": { "rigor": 4, "R": 3, "I": 5, "A": 1, "S": 1, "E": 1, "C": 3, "math": 3, "sci": 5, "lang": 2, "comp": 2, "mech": 2, "microbes": 5 }
+    },
+    {
+      "id": "cos-bio-animal", "college": "COS",
+      "name": "BS Biology (Animal Biology)", "short": "Biology - Animal Biology",
+      "tagline": "Study animals, their behavior, ecosystems and conservation.",
+      "careers": ["Wildlife or conservation staff", "Environmental researcher", "Animal science technician", "Pre-vet or health science pathway"],
+      "licensure": "No mandatory licensure exam for the degree itself",
+      "strand": [1, 0.1, 0.2, 0.5, 0.2],
+      "profile": { "rigor": 4, "R": 3, "I": 5, "A": 1, "S": 2, "E": 1, "C": 2, "math": 3, "sci": 5, "lang": 2, "comp": 1, "mech": 1, "animals": 5 }
+    },
+
+    {
+      "id": "coe-bsed-science", "college": "COE",
+      "name": "BSEd - General Science", "short": "Teaching - General Science",
+      "tagline": "Become a high school teacher who makes biology, chemistry and physics click.",
+      "careers": ["High school science teacher", "Academic tutor", "Science curriculum staff", "Lab demonstrator"],
+      "licensure": "Licensure Examination for Teachers (LET)",
+      "strand": [0.8, 0.2, 0.8, 1, 0.1],
+      "profile": { "rigor": 4, "R": 1, "I": 4, "A": 2, "S": 5, "E": 2, "C": 3, "math": 3, "sci": 5, "lang": 3, "comp": 2, "mech": 1, "kids": 1 }
+    },
+    {
+      "id": "coe-bsed-math", "college": "COE",
+      "name": "BSEd - Mathematics", "short": "Teaching - Mathematics",
+      "tagline": "Become a high school teacher who helps students understand and enjoy math.",
+      "careers": ["High school math teacher", "Academic tutor", "Review-center instructor", "Education program staff"],
+      "licensure": "Licensure Examination for Teachers (LET)",
+      "strand": [0.9, 0.3, 0.7, 1, 0.1],
+      "profile": { "rigor": 4, "I": 4, "A": 1, "S": 5, "E": 2, "C": 3, "math": 5, "sci": 3, "lang": 3, "comp": 2, "kids": 1 }
+    },
+    {
+      "id": "coe-bsed-english", "college": "COE",
+      "name": "BSEd - English", "short": "Teaching - English",
+      "tagline": "Become a high school teacher of language, literature and communication.",
+      "careers": ["High school English teacher", "Language tutor", "Content writer or editor", "Communication trainer"],
+      "licensure": "Licensure Examination for Teachers (LET)",
+      "strand": [0.3, 0.3, 1, 1, 0.1],
+      "profile": { "rigor": 3, "I": 2, "A": 3, "S": 5, "E": 2, "C": 3, "math": 1, "sci": 1, "lang": 5, "comp": 2, "kids": 1 }
+    },
+    {
+      "id": "coe-beed", "college": "COE",
+      "name": "Bachelor of Elementary Education", "short": "Elementary Education",
+      "tagline": "Teach young children the foundations of reading, math, science and values.",
+      "careers": ["Elementary school teacher", "Preschool or daycare teacher", "Tutor", "Learning center staff"],
+      "licensure": "Licensure Examination for Teachers (LET)",
+      "strand": [0.4, 0.2, 1, 1, 0.2],
+      "profile": { "rigor": 3, "I": 2, "A": 3, "S": 5, "E": 2, "C": 3, "math": 3, "sci": 3, "lang": 4, "comp": 2, "mech": 1, "kids": 5 }
+    },
+    {
+      "id": "coe-btled-ia", "college": "COE",
+      "name": "BTLEd - Industrial Arts", "short": "Teaching - Industrial Arts",
+      "tagline": "Teach practical trades such as carpentry, drafting and electrical work.",
+      "careers": ["TLE or Industrial Arts teacher", "Technical-vocational instructor", "Shop trainer", "Skilled tradesperson"],
+      "licensure": "Licensure Examination for Teachers (LET)",
+      "strand": [0.4, 0.1, 0.3, 0.6, 1],
+      "profile": { "rigor": 2, "R": 4, "I": 2, "A": 2, "S": 4, "E": 1, "C": 2, "math": 3, "sci": 2, "lang": 3, "comp": 1, "mech": 5, "kids": 1, "buildings": 2, "electricity": 2 }
+    },
+    {
+      "id": "coe-btled-he", "college": "COE",
+      "name": "BTLEd - Home Economics", "short": "Teaching - Home Economics",
+      "tagline": "Teach cooking, sewing, household management and food skills.",
+      "careers": ["TLE or Home Economics teacher", "Technical-vocational instructor", "Caterer or food entrepreneur", "Home-based business owner"],
+      "licensure": "Licensure Examination for Teachers (LET)",
+      "strand": [0.2, 0.4, 0.5, 0.6, 1],
+      "profile": { "rigor": 2, "R": 3, "I": 1, "A": 3, "S": 4, "E": 2, "C": 2, "math": 2, "sci": 2, "lang": 3, "comp": 1, "mech": 2, "hospitality": 3, "kids": 1 }
+    },
+    {
+      "id": "coe-btled-ict", "college": "COE",
+      "name": "BTLEd - Information and Communications Technology", "short": "Teaching - ICT",
+      "tagline": "Teach computer skills, programming basics and digital literacy.",
+      "careers": ["ICT or TLE teacher", "Computer lab coordinator", "Technical-vocational instructor", "IT support staff"],
+      "licensure": "Licensure Examination for Teachers (LET)",
+      "strand": [0.6, 0.2, 0.3, 0.6, 1],
+      "profile": { "rigor": 3, "R": 2, "I": 3, "A": 2, "S": 4, "E": 1, "C": 3, "math": 3, "sci": 2, "lang": 3, "comp": 5, "mech": 2, "kids": 1 }
+    },
+
+    {
+      "id": "cit-adt", "college": "CIT",
+      "name": "BIT - Architectural Drafting Technology", "short": "Architectural Drafting",
+      "tagline": "Draw building plans and technical drawings using drafting tools and CAD.",
+      "careers": ["CAD operator or draftsman", "Architectural drafter", "Estimator", "Interior or building design assistant"],
+      "licensure": "No PRC board exam for the degree; TESDA certifications may apply - verify",
+      "strand": [0.6, 0.1, 0.2, 0.5, 1],
+      "profile": { "rigor": 2, "R": 4, "I": 2, "A": 4, "S": 1, "E": 1, "C": 3, "math": 3, "sci": 2, "lang": 2, "comp": 3, "mech": 3, "buildings": 4 }
+    },
+    {
+      "id": "cit-automotive", "college": "CIT",
+      "name": "BIT - Automotive Technology", "short": "Automotive",
+      "tagline": "Diagnose, repair and maintain cars, motorcycles and engines.",
+      "careers": ["Automotive technician", "Service advisor", "Engine specialist", "Garage or auto-shop owner"],
+      "licensure": "No PRC board exam for the degree; TESDA certifications may apply - verify",
+      "strand": [0.4, 0.1, 0.1, 0.4, 1],
+      "profile": { "rigor": 1, "R": 5, "I": 2, "A": 1, "S": 1, "E": 1, "C": 2, "math": 3, "sci": 2, "lang": 1, "comp": 2, "mech": 5, "vehicles": 5 }
+    },
+    {
+      "id": "cit-civil", "college": "CIT",
+      "name": "BIT - Civil and Construction Technology", "short": "Civil and Construction Tech",
+      "tagline": "Hands-on building skills: construction, surveying and site work.",
+      "careers": ["Construction foreman", "Surveyor or estimator", "Site supervisor", "Contractor"],
+      "licensure": "No PRC board exam for the degree; TESDA certifications may apply - verify",
+      "strand": [0.5, 0.1, 0.1, 0.4, 1],
+      "profile": { "rigor": 1, "R": 5, "I": 2, "A": 1, "S": 1, "E": 2, "C": 3, "math": 3, "sci": 2, "lang": 1, "comp": 1, "mech": 4, "buildings": 5 }
+    },
+    {
+      "id": "cit-electrical", "college": "CIT",
+      "name": "BIT - Electrical Technology", "short": "Electrical Technology",
+      "tagline": "Install, test and maintain electrical wiring and equipment.",
+      "careers": ["Electrician or electrical technician", "Maintenance technician", "Electrical installation supervisor", "Contractor"],
+      "licensure": "No PRC board exam for the degree; TESDA certifications may apply - verify",
+      "strand": [0.5, 0.1, 0.1, 0.4, 1],
+      "profile": { "rigor": 1, "R": 5, "I": 3, "S": 1, "E": 1, "C": 3, "math": 3, "sci": 3, "lang": 1, "comp": 2, "mech": 4, "electricity": 5 }
+    },
+    {
+      "id": "cit-electronics", "college": "CIT",
+      "name": "BIT - Electronics Technology", "short": "Electronics Technology",
+      "tagline": "Build, test and repair electronic circuits, devices and control systems.",
+      "careers": ["Electronics technician", "Equipment repair specialist", "Production technician", "Instrumentation technician"],
+      "licensure": "No PRC board exam for the degree; TESDA certifications may apply - verify",
+      "strand": [0.6, 0.1, 0.1, 0.4, 1],
+      "profile": { "signals": 2, "rigor": 2, "R": 4, "I": 4, "S": 1, "C": 3, "math": 3, "sci": 3, "lang": 1, "comp": 3, "mech": 3, "electricity": 4 }
+    },
+    {
+      "id": "cit-mechanical", "college": "CIT",
+      "name": "BIT - Mechanical Technology", "short": "Mechanical Technology",
+      "tagline": "Operate, fabricate and maintain machines, tools and industrial equipment.",
+      "careers": ["Machinist or fabricator", "Maintenance technician", "Production supervisor", "Welding or machine shop operator"],
+      "licensure": "No PRC board exam for the degree; TESDA certifications may apply - verify",
+      "strand": [0.4, 0.1, 0.1, 0.4, 1],
+      "profile": { "rigor": 1, "R": 5, "I": 2, "A": 1, "S": 1, "E": 1, "C": 2, "math": 3, "sci": 2, "lang": 1, "comp": 2, "mech": 5, "vehicles": 2, "cooling": 1 }
+    },
+    {
+      "id": "cit-hvac", "college": "CIT",
+      "name": "BIT - Heating, Ventilation and Airconditioning Technology", "short": "HVAC Technology",
+      "tagline": "Install and service air-conditioning, ventilation and refrigeration systems.",
+      "careers": ["HVAC / refrigeration technician", "Installation supervisor", "Service shop owner", "Building maintenance technician"],
+      "licensure": "No PRC board exam for the degree; TESDA certifications may apply - verify",
+      "strand": [0.4, 0.1, 0.1, 0.4, 1],
+      "profile": { "rigor": 1, "R": 5, "I": 2, "S": 1, "E": 1, "C": 3, "math": 3, "sci": 3, "lang": 1, "comp": 1, "mech": 5, "cooling": 5, "electricity": 2 }
+    },
+    {
+      "id": "cit-hrm", "college": "CIT",
+      "name": "BIT - Hotel and Restaurant Management", "short": "Hotel and Restaurant Mgmt.",
+      "tagline": "Run hotels, restaurants and food services with great customer care.",
+      "careers": ["Hotel front office or housekeeping staff", "Restaurant or kitchen supervisor", "Event and catering coordinator", "Cruise ship or resort staff"],
+      "licensure": "No PRC board exam for the degree; TESDA certifications (for example Cookery) may apply - verify",
+      "strand": [0.2, 0.8, 0.6, 0.6, 1],
+      "profile": { "rigor": 1, "R": 2, "I": 1, "A": 3, "S": 4, "E": 4, "C": 3, "math": 2, "sci": 1, "lang": 4, "comp": 2, "mech": 1, "hospitality": 5 }
+    }
+  ]
+}

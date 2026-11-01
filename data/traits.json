@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "note": "Traits are scored 0-100 for the student and 0-5 for each course profile. 'interest' traits follow Holland Codes (RIASEC). 'skill' traits are school-subject strengths. 'niche' traits separate look-alike courses (for example Animal Biology vs Microbiology)."
+  },
+  "traits": [
+    { "id": "R", "group": "interest", "label": "Hands-on (Realistic)", "description": "Likes building, fixing, tools, outdoors and physical work." },
+    { "id": "I", "group": "interest", "label": "Analytical (Investigative)", "description": "Likes figuring things out, research, experiments and hard problems." },
+    { "id": "A", "group": "interest", "label": "Creative (Artistic)", "description": "Likes designing, drawing, making and original ideas." },
+    { "id": "S", "group": "interest", "label": "Helping (Social)", "description": "Likes teaching, listening, guiding and serving people." },
+    { "id": "E", "group": "interest", "label": "Leading (Enterprising)", "description": "Likes leading, persuading, business and taking initiative." },
+    { "id": "C", "group": "interest", "label": "Organized (Conventional)", "description": "Likes order, rules, accuracy and working with data or records." },
+
+    { "id": "math", "group": "skill", "label": "Math", "description": "Comfort with numbers, formulas and logic." },
+    { "id": "sci", "group": "skill", "label": "Science", "description": "Interest and strength in biology, chemistry and physics." },
+    { "id": "lang", "group": "skill", "label": "Language and Communication", "description": "Reading, writing and speaking clearly in English." },
+    { "id": "comp", "group": "skill", "label": "Computing", "description": "Comfort with computers, software and coding." },
+    { "id": "mech", "group": "skill", "label": "Mechanical and Technical", "description": "Understanding how machines and tools work." },
+    { "id": "rigor", "group": "skill", "label": "Theory and Study Stamina", "description": "Willingness to study theory deeply and prepare for board or licensure exams." },
+
+    { "id": "animals", "group": "niche", "label": "Animals", "description": "Caring for and studying animals." },
+    { "id": "microbes", "group": "niche", "label": "Microbes and Lab Work", "description": "Cells, bacteria and microscope work." },
+    { "id": "vehicles", "group": "niche", "label": "Vehicles and Engines", "description": "Cars, motorcycles and engines." },
+    { "id": "buildings", "group": "niche", "label": "Buildings and Construction", "description": "Structures, plans and construction." },
+    { "id": "electricity", "group": "niche", "label": "Electricity and Electronics", "description": "Circuits, wiring and gadgets." },
+    { "id": "signals", "group": "niche", "label": "Signals and Communications", "description": "Phones, radio, broadcasting, antennas and networks." },
+    { "id": "cooling", "group": "niche", "label": "Cooling Systems", "description": "Air-conditioning and refrigeration." },
+    { "id": "hospitality", "group": "niche", "label": "Food and Hospitality", "description": "Cooking, serving and hotel or restaurant work." },
+    { "id": "kids", "group": "niche", "label": "Teaching Children", "description": "Working with young learners." }
+  ]
+}

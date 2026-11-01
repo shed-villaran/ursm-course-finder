@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "version": "0.1-draft",
+    "language": "en",
+    "statementScale": [
+      { "label": "Strongly yes", "value": 1 },
+      { "label": "Yes", "value": 0.5 },
+      { "label": "Not sure", "value": 0 },
+      { "label": "No", "value": -0.5 },
+      { "label": "Strongly no", "value": -1 }
+    ],
+    "note": "'effects' map a trait id to a weight (0-1). A statement answer multiplies the weight by the scale value. A scenario answer applies the chosen option's weights."
+  },
+  "strandQuestion": {
+    "id": "strand",
+    "text": "Which Senior High School strand are you in (or did you take)?",
+    "options": ["STEM", "ABM", "HUMSS", "GAS", "TVL", "Not sure / Other"]
+  },
+  "questions": [
+    { "id": "q01", "type": "statement", "category": "skills", "text": "I enjoy solving math problems.", "effects": { "math": 1, "I": 0.3 } },
+    { "id": "q02", "type": "statement", "category": "skills", "text": "I can explain my ideas clearly when I speak or write.", "effects": { "lang": 1, "S": 0.3 } },
+    { "id": "q03", "type": "statement", "category": "skills", "text": "I enjoy science experiments and learning how nature works.", "effects": { "sci": 1, "I": 0.5 } },
+    { "id": "q04", "type": "statement", "category": "skills", "text": "I know my way around computers, apps, and the internet very well.", "effects": { "comp": 1 } },
+    { "id": "q05", "type": "statement", "category": "skills", "text": "I like fixing broken things or finding out how machines work.", "effects": { "mech": 1, "R": 0.6 } },
+    { "id": "q06", "type": "statement", "category": "skills", "text": "I notice small mistakes in numbers, forms, or spelling.", "effects": { "C": 1 } },
+    { "id": "q07", "type": "statement", "category": "skills", "text": "I enjoy drawing, designing, or making things look good.", "effects": { "A": 1 } },
+    { "id": "q08", "type": "statement", "category": "skills", "text": "My classmates often ask me to help them understand a lesson.", "effects": { "S": 0.8, "lang": 0.4 } },
+    { "id": "q09", "type": "statement", "category": "skills", "text": "I can work on a hard problem for hours until I solve it.", "effects": { "I": 0.8, "math": 0.3 } },
+    { "id": "q10", "type": "statement", "category": "skills", "text": "I enjoy coding, or I want to learn how to code.", "effects": { "comp": 1, "I": 0.3 } },
+    { "id": "q11", "type": "statement", "category": "skills", "text": "I am comfortable learning physics, like forces, motion, and electricity.", "effects": { "sci": 0.6, "math": 0.4, "R": 0.3 } },
+    { "id": "q12", "type": "statement", "category": "skills", "text": "I feel confident reading, writing, and speaking in English.", "effects": { "lang": 1 } },
+
+    { "id": "q13", "type": "statement", "category": "interests", "text": "I would happily spend a free afternoon building or repairing something with my hands.", "effects": { "R": 1, "mech": 0.6 } },
+    { "id": "q14", "type": "statement", "category": "interests", "text": "I like learning why people think, feel, and act the way they do.", "effects": { "I": 0.5, "S": 0.6 } },
+    { "id": "q15", "type": "statement", "category": "interests", "text": "I enjoy cooking, baking, or serving food to others.", "effects": { "hospitality": 1, "A": 0.3, "S": 0.3 } },
+    { "id": "q16", "type": "statement", "category": "interests", "text": "I like caring for, watching, or studying animals.", "effects": { "animals": 1, "sci": 0.4 } },
+    { "id": "q17", "type": "statement", "category": "interests", "text": "Tiny things like bacteria and cells fascinate me.", "effects": { "microbes": 1, "sci": 0.6 } },
+    { "id": "q18", "type": "statement", "category": "interests", "text": "I like drawing plans, floor plans, or building designs.", "effects": { "buildings": 0.6, "A": 0.7, "R": 0.2 } },
+    { "id": "q19", "type": "statement", "category": "interests", "text": "I like keeping information organized in lists, tables, or files.", "effects": { "C": 1 } },
+    { "id": "q20", "type": "statement", "category": "interests", "text": "I enjoy leading a group and making decisions.", "effects": { "E": 1 } },
+    { "id": "q21", "type": "statement", "category": "interests", "text": "I like helping people who feel sad, stressed, or confused.", "effects": { "S": 1, "I": 0.2 } },
+    { "id": "q22", "type": "statement", "category": "interests", "text": "I am happy working outdoors or on a site, even when it is hot or dusty.", "effects": { "R": 1 } },
+    { "id": "q23", "type": "statement", "category": "interests", "text": "I like electronics, wires, circuits, and gadgets.", "effects": { "electricity": 1, "R": 0.4, "sci": 0.3 } },
+    { "id": "q24", "type": "statement", "category": "interests", "text": "I am curious about how cars, motorcycles, and engines work.", "effects": { "vehicles": 1, "mech": 0.5, "R": 0.5 } },
+    { "id": "q25", "type": "statement", "category": "interests", "text": "I am curious how air-conditioners and refrigerators keep things cold.", "effects": { "cooling": 1, "mech": 0.4 } },
+    { "id": "q26", "type": "statement", "category": "interests", "text": "I like numbers, patterns, and logic even when they have no practical use.", "effects": { "math": 0.8, "I": 0.8 } },
+    { "id": "q27", "type": "statement", "category": "interests", "text": "I enjoy teaching younger kids and watching them learn.", "effects": { "kids": 1, "S": 0.4 } },
+
+    { "id": "q28", "type": "statement", "category": "personality", "text": "I prefer working in a team over working alone.", "effects": { "S": 0.5, "E": 0.3 } },
+    { "id": "q29", "type": "statement", "category": "personality", "text": "I like following clear steps and rules.", "effects": { "C": 0.8 } },
+    { "id": "q30", "type": "statement", "category": "personality", "text": "I like trying new ideas, even if they might fail.", "effects": { "A": 0.5, "E": 0.4, "I": 0.3 } },
+    { "id": "q31", "type": "statement", "category": "personality", "text": "I stay calm and patient when people are upset or slow to understand.", "effects": { "S": 1 } },
+    { "id": "q32", "type": "statement", "category": "personality", "text": "I like talking to many different people every day.", "effects": { "S": 0.6, "E": 0.6, "hospitality": 0.3 } },
+
+    { "id": "q33", "type": "statement", "category": "dreams", "text": "I dream of building something big, like a bridge, a tower, or a road.", "effects": { "buildings": 1, "R": 0.5, "math": 0.3 } },
+    { "id": "q34", "type": "statement", "category": "dreams", "text": "I dream of owning a business someday.", "effects": { "E": 1 } },
+    { "id": "q35", "type": "statement", "category": "dreams", "text": "I dream of discovering something new, like a cure, a new species, or new technology.", "effects": { "I": 1, "sci": 0.5 } },
+    { "id": "q36", "type": "statement", "category": "dreams", "text": "I would feel proud to be called \"teacher\".", "effects": { "S": 1, "lang": 0.3 } },
+    { "id": "q37", "type": "statement", "category": "dreams", "text": "I dream of working in tech, like making apps, robots, or AI.", "effects": { "comp": 1, "I": 0.5 } },
+    { "id": "q38", "type": "statement", "category": "dreams", "text": "I want to start earning soon using a practical, hands-on skill.", "effects": { "R": 0.5, "mech": 0.3, "C": 0.2 } },
+    { "id": "q39", "type": "statement", "category": "dreams", "text": "I dream of working in a hotel, resort, restaurant, or cruise ship.", "effects": { "hospitality": 1, "E": 0.4, "S": 0.4 } },
+
+    {
+      "id": "q40", "type": "scenario", "category": "practical",
+      "text": "The computers in your school lab suddenly stop working before an event. What do you do first?",
+      "options": [
+        { "label": "Check the cables, plugs, and power", "effects": { "mech": 0.8, "R": 0.6, "electricity": 0.6 } },
+        { "label": "Look for software errors and settings", "effects": { "comp": 1, "I": 0.5 } },
+        { "label": "Organize everyone so the event can still go on", "effects": { "E": 0.8, "S": 0.6 } },
+        { "label": "Follow the manual or ask the tech office", "effects": { "C": 0.8 } }
+      ]
+    },
+    {
+      "id": "q41", "type": "scenario", "category": "personality",
+      "text": "Your group has a big project. Which job do you take?",
+      "options": [
+        { "label": "Design the layout and visuals", "effects": { "A": 1 } },
+        { "label": "Compute the budget and schedule", "effects": { "math": 0.8, "C": 0.8 } },
+        { "label": "Lead the team and assign tasks", "effects": { "E": 1, "S": 0.3 } },
+        { "label": "Research and test the ideas", "effects": { "I": 1, "sci": 0.5 } },
+        { "label": "Build the model or prototype", "effects": { "R": 1, "mech": 0.7 } }
+      ]
+    },
+    {
+      "id": "q42", "type": "scenario", "category": "personality",
+      "text": "A friend is crying after a bad day. You...",
+      "options": [
+        { "label": "Listen and ask gentle questions", "effects": { "S": 1 } },
+        { "label": "Help them solve the problem step by step", "effects": { "I": 0.6, "C": 0.4 } },
+        { "label": "Cheer them up with food or an activity", "effects": { "hospitality": 0.5, "S": 0.4, "A": 0.2 } },
+        { "label": "Give them space and check on them later", "effects": { "C": 0.3 } }
+      ]
+    },
+    {
+      "id": "q43", "type": "scenario", "category": "interests",
+      "text": "On a field trip you get free time. Where do you go?",
+      "options": [
+        { "label": "Zoo, farm, or nature park", "effects": { "animals": 1, "sci": 0.6, "I": 0.3 } },
+        { "label": "Factory, bridge, or machine exhibit", "effects": { "R": 0.8, "mech": 0.7, "buildings": 0.3 } },
+        { "label": "Science museum or lab tour", "effects": { "sci": 0.8, "microbes": 0.5, "I": 0.6 } },
+        { "label": "Hotel or restaurant tour", "effects": { "hospitality": 1, "E": 0.4 } },
+        { "label": "Robotics or computer booth", "effects": { "comp": 1, "electricity": 0.3 } },
+        { "label": "Art or history museum", "effects": { "A": 0.8, "lang": 0.4 } }
+      ]
+    },
+    {
+      "id": "q44", "type": "scenario", "category": "skills",
+      "text": "You can join one extra class for free. Which one?",
+      "options": [
+        { "label": "Algebra and calculus", "effects": { "math": 1 } },
+        { "label": "Biology and chemistry", "effects": { "sci": 1, "I": 0.3 } },
+        { "label": "Literature and public speaking", "effects": { "lang": 1, "S": 0.3 } },
+        { "label": "Programming and ICT", "effects": { "comp": 1 } },
+        { "label": "Shop class (carpentry, electrical, auto)", "effects": { "mech": 0.8, "R": 0.7 } },
+        { "label": "Cooking and home skills", "effects": { "hospitality": 0.8, "A": 0.3 } }
+      ]
+    },
+    {
+      "id": "q45", "type": "scenario", "category": "dreams",
+      "text": "Your dream workplace looks like...",
+      "options": [
+        { "label": "A laboratory with microscopes", "effects": { "I": 1, "sci": 0.8, "microbes": 0.4 } },
+        { "label": "A classroom full of students", "effects": { "S": 1, "kids": 0.4, "lang": 0.3 } },
+        { "label": "A construction site or workshop", "effects": { "R": 1, "mech": 0.6, "buildings": 0.4 } },
+        { "label": "An office with computers", "effects": { "comp": 0.8, "C": 0.6 } },
+        { "label": "A hotel kitchen or restaurant floor", "effects": { "hospitality": 1, "S": 0.4, "E": 0.3 } },
+        { "label": "A quiet room where I listen to people", "effects": { "S": 1, "I": 0.4 } }
+      ]
+    },
+    {
+      "id": "q46", "type": "scenario", "category": "practical",
+      "text": "A fan at home stops working. You...",
+      "options": [
+        { "label": "Open it up and find the problem", "effects": { "mech": 1, "R": 0.6, "electricity": 0.4 } },
+        { "label": "Search online to learn how to fix it", "effects": { "comp": 0.6, "I": 0.5 } },
+        { "label": "Read the manual carefully first", "effects": { "C": 0.8 } },
+        { "label": "Ask a technician or someone in the family", "effects": { "S": 0.3 } }
+      ]
+    },
+    {
+      "id": "q47", "type": "scenario", "category": "values",
+      "text": "You would most like to be remembered as someone who...",
+      "options": [
+        { "label": "discovered or invented something", "effects": { "I": 1, "sci": 0.4 } },
+        { "label": "helped many people grow", "effects": { "S": 1 } },
+        { "label": "built something that lasts", "effects": { "R": 1, "buildings": 0.5, "mech": 0.3 } },
+        { "label": "led a successful team or business", "effects": { "E": 1 } },
+        { "label": "created something beautiful", "effects": { "A": 1 } }
+      ]
+    },
+    {
+      "id": "q48", "type": "scenario", "category": "personality",
+      "text": "You must teach a lesson tomorrow. How do you feel?",
+      "options": [
+        { "label": "Excited!", "effects": { "S": 1, "lang": 0.3, "kids": 0.3 } },
+        { "label": "Nervous, but I can do it", "effects": { "S": 0.4 } },
+        { "label": "I would rather prepare the materials than speak", "effects": { "C": 0.5, "A": 0.3 } },
+        { "label": "I would try to avoid it", "effects": { "C": 0.1 } }
+      ]
+    },
+    {
+      "id": "q49", "type": "scenario", "category": "interests",
+      "text": "It is the weekend. What do you pick?",
+      "options": [
+        { "label": "Solve puzzles or logic games", "effects": { "I": 0.6, "math": 0.6 } },
+        { "label": "Volunteer in the community", "effects": { "S": 1 } },
+        { "label": "Make videos, drawings, or music", "effects": { "A": 1 } },
+        { "label": "Fix a bike or build a small shelf", "effects": { "R": 1, "mech": 0.8 } },
+        { "label": "Sell things online or run a small business", "effects": { "E": 1 } },
+        { "label": "Care for pets or garden", "effects": { "animals": 0.8, "sci": 0.3 } }
+      ]
+    },
+    {
+      "id": "q50", "type": "scenario", "category": "skills",
+      "text": "In math class, you prefer...",
+      "options": [
+        { "label": "Proofs and why formulas work", "effects": { "math": 0.8, "I": 0.8 } },
+        { "label": "Using formulas on real problems like buildings or circuits", "effects": { "math": 0.6, "R": 0.6, "mech": 0.4 } },
+        { "label": "Teaching others the steps", "effects": { "S": 0.8, "math": 0.3 } },
+        { "label": "I avoid math when I can", "effects": { "A": 0.2 } }
+      ]
+    },
+    {"id":"q51","type":"statement","category":"practical","text":"I do not mind studying hard for years, including preparing for a board or licensure exam.","effects":{"rigor":1}},
+    {"id":"q52","type":"statement","category":"skills","text":"I like understanding the theory and the \"why\" behind things, not just the steps.","effects":{"rigor":1,"I":0.3}},
+    {"id":"q53","type":"scenario","category":"practical","text":"After you graduate, which plan sounds best?","options":[{"label":"Study hard for a board exam and become a licensed professional","effects":{"rigor":1}},{"label":"Learn a skill, get certificates, and start earning soon","effects":{"R":0.5}},{"label":"Pass the teacher's exam and teach","effects":{"S":0.6,"rigor":0.5}},{"label":"Work in a business or a service job","effects":{"E":0.5}}]},
+    {"id":"q54","type":"statement","category":"personality","text":"I stay patient with small children, even when they are noisy or cry.","effects":{"kids":1,"S":0.4}},
+    {"id":"q55","type":"statement","category":"interests","text":"I enjoy telling stories, singing, or playing games with children.","effects":{"kids":1,"A":0.3}},
+    {"id":"q56","type":"statement","category":"dreams","text":"I would like to work with engines in a garage or service center.","effects":{"vehicles":1,"R":0.4}},
+    {"id":"q57","type":"statement","category":"interests","text":"I would like to learn how to install and repair air-conditioners and refrigerators.","effects":{"cooling":1,"mech":0.4,"R":0.3}},
+    {"id":"q58","type":"statement","category":"dreams","text":"I would enjoy a job outdoors studying wildlife, forests, or farms.","effects":{"animals":0.8,"R":0.3,"sci":0.4}},
+    {"id":"q59","type":"statement","category":"dreams","text":"I would enjoy working in a clean lab with a microscope and a lab coat.","effects":{"microbes":1,"I":0.4,"C":0.3}},
+    {"id":"q60","type":"statement","category":"interests","text":"I like reading blueprints or watching how a house gets built.","effects":{"buildings":1,"R":0.3}},
+    {"id":"q61","type":"statement","category":"interests","text":"I would like to learn how to wire a house or fix an electrical panel.","effects":{"electricity":1,"R":0.5}},
+    {"id":"q62","type":"statement","category":"interests","text":"I am curious how phones, radios, and the internet send signals.","effects":{"signals":1,"I":0.3,"sci":0.3}},
+    {"id":"q63","type":"statement","category":"skills","text":"I like building or upgrading computer hardware, or programming small devices like Arduino.","effects":{"comp":0.7,"electricity":0.5,"R":0.4}},
+    {"id":"q64","type":"statement","category":"dreams","text":"I would like to work with antennas, networks, or radio and TV broadcasting equipment.","effects":{"signals":1,"comp":0.3,"electricity":0.3}}
+  ]
+}

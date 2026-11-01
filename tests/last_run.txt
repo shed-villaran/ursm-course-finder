@@ -1,0 +1,126 @@
+=== 1. Ideal students (traits exactly match the program) ===
+ 1 coeng-civil          Q=36   Civil Eng. 87% | Civil and Construction Tech 78% | Mechanical Eng. 77%
+ 1 coeng-electrical     Q=36   Electrical Eng. 79% | Electronics Technology 77% | Biology - Microbiology 75%
+ 1 coeng-mechanical     Q=36   Mechanical Eng. 87% | Mechanical Technology 76% | Mathematics 75%
+ 1 coeng-ece            Q=36   Electronics and Comm. Eng. 83% | Computer Eng. 75% | Computer Science 72%
+ 1 coeng-computer       Q=36   Computer Eng. 83% | Computer Science 81% | Mathematics 78%
+ 1 cos-cs               Q=28   Computer Science 78% | Computer Eng. 67% | Mathematics 64%
+ 1 cos-humanservices    Q=25   Human Services 91% | Teaching - English 86% | Teaching - Home Economics 62%
+ 1 cos-psychology       Q=27   Psychology 82% | Human Services 67% | Teaching - General Science 66%
+ 1 cos-math             Q=25   Mathematics 85% | Computer Science 70% | Biology - Microbiology 70%
+ 1 cos-bio-micro        Q=25   Biology - Microbiology 91% | Mathematics 70% | Electronics Technology 62%
+ 1 cos-bio-animal       Q=25   Biology - Animal Biology 86% | Biology - Microbiology 63% | Teaching - General Science 62%
+ 1 coe-bsed-science     Q=32   Teaching - General Science 78% | Psychology 76% | Teaching - Mathematics 69%
+ 1 coe-bsed-math        Q=27   Teaching - Mathematics 83% | Psychology 72% | Teaching - General Science 71%
+ 1 coe-bsed-english     Q=25   Teaching - English 90% | Human Services 86% | Elementary Education 64%
+ 1 coe-beed             Q=25   Elementary Education 91% | Human Services 85% | Teaching - English 82%
+ 1 coe-btled-ia         Q=36   Teaching - Industrial Arts 79% | Mechanical Technology 74% | Teaching - Home Economics 73%
+ 1 coe-btled-he         Q=25   Teaching - Home Economics 83% | Human Services 65% | Teaching - English 64%
+ 1 coe-btled-ict        Q=25   Teaching - ICT 80% | Electronics Technology 59% | Teaching - Home Economics 59%
+ 1 cit-adt              Q=31   Architectural Drafting 90% | Civil and Construction Tech 81% | Mechanical Technology 79%
+ 1 cit-automotive       Q=25   Automotive 88% | Mechanical Technology 81% | HVAC Technology 70%
+ 1 cit-civil            Q=25   Civil and Construction Tech 91% | Mechanical Technology 80% | Architectural Drafting 78%
+ 1 cit-electrical       Q=32   Electrical Technology 89% | Mechanical Technology 88% | Electronics Technology 83%
+ 1 cit-electronics      Q=25   Electronics Technology 93% | Electrical Technology 78% | Mechanical Technology 72%
+ 1 cit-mechanical       Q=30   Mechanical Technology 87% | Automotive 79% | HVAC Technology 73%
+ 1 cit-hvac             Q=25   HVAC Technology 89% | Mechanical Technology 81% | Automotive 75%
+ 1 cit-hrm              Q=25   Hotel and Restaurant Mgmt. 75% | Teaching - Home Economics 71% | Human Services 51%
+
+Ideal: #1 for 26/26, top 3 for 26/26
+
+=== 2. Noisy students (sigma=0.15, 20 runs per program) ===
+program               top1  top3   avgQ   when missed, #1 pick was
+coeng-electrical       45%   85%   36.0   Electrical Technology (2), Electronics Technology (1)
+coeng-mechanical       90%   95%   36.0   Mechanical Technology (1)
+coe-bsed-science       50%  100%   34.0   
+cit-electrical         60%  100%   33.6   
+coeng-computer         65%  100%   35.5   
+coe-bsed-math          75%  100%   32.1   
+coeng-ece              85%  100%   36.0   
+cit-electronics        85%  100%   28.1   
+coe-bsed-english       90%  100%   25.0   
+coe-btled-ict          90%  100%   28.3   
+cos-cs                 95%  100%   27.6   
+cos-humanservices      95%  100%   25.0   
+cos-math               95%  100%   25.8   
+coe-beed               95%  100%   25.0   
+coe-btled-he           95%  100%   25.4   
+cit-automotive         95%  100%   26.5   
+coeng-civil           100%  100%   35.7   
+cos-psychology        100%  100%   27.7   
+cos-bio-micro         100%  100%   25.0   
+cos-bio-animal        100%  100%   25.0   
+coe-btled-ia          100%  100%   36.0   
+cit-adt               100%  100%   28.4   
+cit-civil             100%  100%   26.1   
+cit-mechanical        100%  100%   33.1   
+cit-hvac              100%  100%   28.4   
+cit-hrm               100%  100%   25.0   
+
+Overall: top 1 = 89%, top 3 = 99%, average questions = 29.6
+
+=== 3. Story students (mixed interests) ===
+
+Loves coding and math, wants to build apps
+   70%  BS Computer Science  [COS]
+   68%  BTLEd - Information and Communications Technology  [COE]
+   68%  BIT - Electronics Technology  [CIT]
+   strongest skills: Computing 100, Math 70, Theory and Study Stamina 37
+
+Kind, patient, loves kids, good at English
+   79%  Bachelor of Elementary Education  [COE]
+   74%  BSEd - English  [COE]
+   73%  BS Human Services  [COS]
+   strongest skills: Language and Communication 83, Theory and Study Stamina 50, Science 35
+
+Likes taking engines apart, wants a job fast
+   80%  BIT - Automotive Technology  [CIT]
+   74%  BTLEd - Industrial Arts  [COE]
+   73%  BIT - Mechanical Technology  [CIT]
+   strongest skills: Mechanical and Technical 92, Theory and Study Stamina 50, Computing 41
+
+Fascinated by animals and nature, loves biology
+   70%  BS Biology (Animal Biology)  [COS]
+   57%  BS Biology (Microbiology)  [COS]
+   57%  BIT - Electronics Technology  [CIT]
+   strongest skills: Science 92, Computing 37, Language and Communication 32
+
+Great with people, loves leading, dreams of a hotel career
+   75%  BTLEd - Home Economics  [COE]
+   72%  BIT - Hotel and Restaurant Management  [CIT]
+   68%  BS Human Services  [COS]
+   strongest skills: Language and Communication 66, Theory and Study Stamina 50, Math 25
+
+Strong in math and physics, wants to build bridges
+   81%  BIT - Civil and Construction Technology  [CIT]
+   80%  BIT - Architectural Drafting Technology  [CIT]
+   76%  BS Civil Engineering  [COEng]
+   strongest skills: Math 84, Mechanical and Technical 63, Theory and Study Stamina 50
+
+Cares about people's feelings, curious about the mind
+   73%  BS Human Services  [COS]
+   72%  BS Psychology  [COS]
+   69%  BSEd - English  [COE]
+   strongest skills: Language and Communication 71, Theory and Study Stamina 50, Science 47
+
+Creative, draws a lot, likes buildings and plans
+   73%  BIT - Architectural Drafting Technology  [CIT]
+   64%  BTLEd - Home Economics  [COE]
+   56%  BIT - Civil and Construction Technology  [CIT]
+   strongest skills: Theory and Study Stamina 50, Computing 45, Mechanical and Technical 37
+
+=== 4. How the race narrows (ideal Computer Science student) ===
+after  0 questions: 26 programs still in the race, confidence 13%, leader = coeng-civil
+after  1 questions: 26 programs still in the race, confidence 23%, leader = coe-btled-ict
+after  2 questions: 21 programs still in the race, confidence 34%, leader = coe-btled-ict
+after  3 questions: 16 programs still in the race, confidence 45%, leader = cos-cs
+after  5 questions: 11 programs still in the race, confidence 53%, leader = cos-cs
+after  8 questions:  6 programs still in the race, confidence 72%, leader = cos-cs
+after 10 questions:  3 programs still in the race, confidence 79%, leader = cos-cs
+after 15 questions:  3 programs still in the race, confidence 87%, leader = cos-cs
+after 20 questions:  3 programs still in the race, confidence 90%, leader = cos-cs
+after 25 questions:  3 programs still in the race, confidence 88%, leader = cos-cs
+after 28 questions:  3 programs still in the race, confidence 91%, leader = cos-cs
+
+=== 5. Which questions get used? ===
+questions never asked in any of the 26 ideal runs: none
